@@ -1,13 +1,15 @@
 source http://10.20.0.79:9001/nexus/service/local/nuget/dial-nuget-packages/
 source http://10.20.0.104:9001/repository/thirdparty-signed/
 source https://api.nuget.org/v3/index.json
+source https://dotnet.myget.org/F/roslyn/api/v3/index.json
 
 nuget ManagedEsent 1.9.4 restriction: >= net461
 nuget Microsoft.Build 15.3.409 restriction: >= net461
 nuget Microsoft.Build.Framework 15.3.409 restriction: >= net461
 nuget Microsoft.Build.Tasks.Core 15.3.409 restriction: >= net461
 nuget Microsoft.Build.Utilities.Core 15.3.409 restriction: >= net461
-nuget Microsoft.CodeAnalysis 2.3.2 restriction: >= net461
+# nuget Microsoft.CodeAnalysis 2.3.2 restriction: >= net461
+nuget Microsoft.CodeAnalysis 2.4.0-beta1-62122-04 restriction: >= net461
 nuget Microsoft.CodeAnalysis.Analyzers 2.3.0-beta1 restriction: >= net461
 nuget Microsoft.CodeAnalysis.Common 2.3.2 restriction: >= net461
 nuget Microsoft.CodeAnalysis.CSharp 2.3.2 restriction: >= net461
